@@ -199,16 +199,20 @@ $('examples').addEventListener('change', (e) => {
   document.querySelector('.paste').open = true;
   $('strict').checked = ex.profile === 'strict' || r.level === 'off';
   $('type').value = formats.some((f) => f.id === fmt) ? fmt : '';
+  typeFromExample = true;
   run({ text: ex.text, filename: `example.${fmt}`, formatOptions: ex.options ? { [fmt]: ex.options } : undefined });
 });
-$('file').addEventListener('change', (e) => { if (e.target.files[0]) run({ file: e.target.files[0] }); });
+// An example pins the format (and strictness) it was written for; a file of your own goes back to detection.
+let typeFromExample = false;
+const runFile = (f) => { if (typeFromExample) { $('type').value = ''; $('strict').checked = false; $('examples').value = ''; typeFromExample = false; } run({ file: f }); };
+$('file').addEventListener('change', (e) => { if (e.target.files[0]) runFile(e.target.files[0]); });
 $('check').addEventListener('click', () => { if ($('text').value) run({ text: $('text').value, filename: 'pasted' + ($('type').value ? '.' + $('type').value : '') }); });
-for (const el of [$('strict'), $('type')]) el.addEventListener('change', () => { if (current) run(current); });
+for (const el of [$('strict'), $('type')]) el.addEventListener('change', () => { typeFromExample = false; if (current) run(current); });
 const drop = $('drop');
 drop.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('file').click(); } });
 for (const ev of ['dragenter', 'dragover']) window.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add('over'); });
 for (const ev of ['dragleave', 'drop']) window.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove('over'); });
-window.addEventListener('drop', (e) => { const f = e.dataTransfer && e.dataTransfer.files[0]; if (f) run({ file: f }); });
+window.addEventListener('drop', (e) => { const f = e.dataTransfer && e.dataTransfer.files[0]; if (f) runFile(f); });
 for (const chip of document.querySelectorAll('.chip')) chip.addEventListener('click', () => { shown[chip.dataset.sev] = !shown[chip.dataset.sev]; if (last) render(last.result, last.fixed); });
 $('copy').addEventListener('click', async () => {
   if (!last) return;
