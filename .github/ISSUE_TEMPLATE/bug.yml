@@ -1,0 +1,17 @@
+name: Bug
+description: A crash, wrong position, bad output format, or anything else that is broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The command you ran and what it printed.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: biolint 0.1.0, Node 22, Ubuntu 24.04 (or the browser name and version)

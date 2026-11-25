@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>biolint playground</title>
+<meta name="description" content="Check VCF, FASTA, FASTQ, GFF3, GTF, BED and SAM files in your browser. Nothing is uploaded.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo" aria-hidden="true">▚</span> biolint <span class="ver" id="version"></span></div>
+  <nav>
+    <button id="lang" class="link" type="button" aria-label="Switch language">中文</button>
+    <a id="repo" class="link" hidden>GitHub</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 data-i18n="title">Find out exactly what is wrong with a bioinformatics file</h1>
+    <p class="lede" data-i18n="lede">Line, column, a plain explanation, the specification section, and how to fix it.</p>
+    <p class="privacy"><span aria-hidden="true">🔒</span> <span data-i18n="privacy">The file is read by this page and never leaves your computer.</span></p>
+  </section>
+
+  <section class="input">
+    <label id="drop" class="drop" tabindex="0">
+      <input id="file" type="file" hidden>
+      <strong data-i18n="drop">Drop a file here, or click to choose one</strong>
+      <span id="formats" class="muted"></span>
+      <span class="muted" data-i18n="gz">.gz and .bgz files are decompressed in the browser</span>
+    </label>
+    <div class="controls">
+      <label><span data-i18n="format">Format</span>
+        <select id="type"><option value="" data-i18n="detect">detect automatically</option></select>
+      </label>
+      <label class="check"><input id="strict" type="checkbox"> <span data-i18n="strict">Strict: follow the specification to the letter</span></label>
+      <label><span data-i18n="example">Try an example</span>
+        <select id="examples"><option value="" data-i18n="pick">choose…</option></select>
+      </label>
+    </div>
+    <details class="paste">
+      <summary data-i18n="paste">…or paste text</summary>
+      <textarea id="text" rows="8" spellcheck="false" placeholder="##fileformat=VCFv4.3"></textarea>
+      <button id="check" type="button" data-i18n="checkBtn">Check</button>
+    </details>
+  </section>
+
+  <section id="status" class="status" hidden aria-live="polite">
+    <progress id="progress" max="1" value="0"></progress>
+    <span id="statusText"></span>
+  </section>
+
+  <section id="results" hidden>
+    <div id="summary" class="summary"></div>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="Severity filter">
+        <button class="chip on" data-sev="error" type="button"></button>
+        <button class="chip on" data-sev="warning" type="button"></button>
+        <button class="chip on" data-sev="info" type="button"></button>
+      </div>
+      <div class="actions">
+        <button id="fix" type="button" hidden></button>
+        <button id="copy" type="button" data-i18n="copy">Copy report</button>
+      </div>
+    </div>
+    <ol id="list" class="diags"></ol>
+    <div id="hidden" class="muted"></div>
+  </section>
+</main>
+
+<footer>
+  <span data-i18n="footer">biolint is free software (GPL-3.0). It also runs on the command line and in CI:</span>
+  <code>npx biolint file.vcf.gz</code>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>

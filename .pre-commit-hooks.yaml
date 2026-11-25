@@ -1,0 +1,6 @@
+- id: biolint
+  name: biolint
+  description: Check bioinformatics files for format problems
+  entry: biolint --format compact
+  language: node
+  files: \.(vcf|fa|fasta|fna|faa|fastq|fq|gff3?|gtf|bed|sam)(\.gz|\.bgz)?$

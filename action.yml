@@ -1,0 +1,29 @@
+name: biolint
+description: Check bioinformatics files (VCF, FASTA, FASTQ, GFF3, GTF, BED, SAM) and annotate problems on the pull request
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  files:
+    description: Files to check, separated by spaces or newlines. Shell globs are expanded.
+    required: true
+  args:
+    description: Extra command-line options, for example "--strict --max-warnings 0"
+    required: false
+    default: ''
+  version:
+    description: biolint version to run (an npm version or tag)
+    required: false
+    default: latest
+runs:
+  using: composite
+  steps:
+    - name: Run biolint
+      shell: bash
+      env:
+        BIOLINT_FILES: ${{ inputs.files }}
+        BIOLINT_ARGS: ${{ inputs.args }}
+        BIOLINT_VERSION: ${{ inputs.version }}
+      run: |
+        # shellcheck disable=SC2086  # word splitting and glob expansion of the inputs is intended
+        npx --yes "biolint@${BIOLINT_VERSION}" --format github $BIOLINT_ARGS $BIOLINT_FILES

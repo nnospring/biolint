@@ -1,0 +1,29 @@
+name: False positive or false negative
+description: biolint reported a problem that is not one, or missed a real one
+labels: [rule]
+body:
+  - type: input
+    id: rule
+    attributes:
+      label: Rule code
+      placeholder: VCF305
+  - type: textarea
+    id: input
+    attributes:
+      label: Smallest input that shows it
+      description: A few lines are enough. Replace real sample names and identifiers. Tabs matter, so paste inside a code block.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and why
+      description: A specification section, or the tool that accepts or rejects this input (name and version), settles it fastest.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: biolint version
+      placeholder: output of `biolint --version`

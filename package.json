@@ -1,0 +1,70 @@
+{
+  "name": "biolint",
+  "version": "0.1.0",
+  "description": "Compiler-grade diagnostics for bioinformatics file formats: exact line and column, a plain explanation, the spec section, and a suggested fix.",
+  "keywords": [
+    "bioinformatics",
+    "linter",
+    "validator",
+    "vcf",
+    "fasta",
+    "fastq",
+    "gff3",
+    "gtf",
+    "bed",
+    "sam",
+    "genomics"
+  ],
+  "license": "GPL-3.0-only",
+  "homepage": "https://github.com/nnospring/biolint#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnospring/biolint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nnospring/biolint/issues"
+  },
+  "type": "module",
+  "bin": {
+    "biolint": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "build:web": "npm run build && node scripts/build-web.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "docs": "node scripts/gen-docs.ts",
+    "corpora": "node scripts/corpora.ts && node scripts/realworld.ts --fetch",
+    "conformance": "node scripts/conformance.ts --check",
+    "realworld": "node scripts/realworld.ts",
+    "serve": "node scripts/serve.ts site 4173",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

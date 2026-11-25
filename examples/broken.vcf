@@ -1,0 +1,8 @@
+##fileformat=VCFv4.2
+##contig=<ID=chr1,length=248956422>
+##INFO=<ID=DP,Number=1,Type=Int,Description="Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele frequency">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NA12878	NA12891
+1	1e+05	rs123	A	T,G	50	PASS	DP=10;AF=0.5	GT	0/1	1/3
+1	200	.	-	T	NA	PASS	DP=7	GT	0/1	0/0

@@ -1,0 +1,3647 @@
+{
+  "corpora": [
+    {
+      "name": "hts-specs",
+      "repo": "https://github.com/samtools/hts-specs.git",
+      "commit": "510c107ba89aa13113818c9e4fa3071283cb7f7b"
+    },
+    {
+      "name": "vcf-validator",
+      "repo": "https://github.com/EBIvariation/vcf-validator.git",
+      "commit": "19125af2b1208065c819cd7378fec1784e28a9d7"
+    },
+    {
+      "name": "BioFmtSpecimens",
+      "repo": "https://github.com/BioJulia/BioFmtSpecimens.git",
+      "commit": "a88ddc9ceca014f47716406f0ede706a70bbbe49"
+    },
+    {
+      "name": "biopython",
+      "repo": "https://github.com/biopython/biopython.git",
+      "commit": "86e9ea56dbd67f51565fc9566e4f87a888f94454"
+    },
+    {
+      "name": "fasta_validator",
+      "repo": "https://github.com/linsalrob/fasta_validator.git",
+      "commit": "a7cbc40f4264b20222f0736e58cc6b700f099eb1"
+    },
+    {
+      "name": "genometools",
+      "repo": "https://github.com/genometools/genometools.git",
+      "commit": "5cd9b0fe1e78449011b15a1fa27e35c4e791702b"
+    },
+    {
+      "name": "acidbio",
+      "repo": "https://github.com/hoffmangroup/acidbio.git",
+      "commit": "f3a01593060a66895b4bd33c0ed661e6123be73e"
+    }
+  ],
+  "rows": [
+    {
+      "suite": "hts-specs VCF 4.1",
+      "format": "vcf",
+      "files": 218,
+      "agree": 200,
+      "falseAccept": [
+        "hts-specs/test/vcf/4.1/failed/failed_body_chrom_001.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_body_duplicated_000.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_body_duplicated_001.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_body_duplicated_003.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_alt_001.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_alt_002.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_alt_004.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_assembly_001.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_format_003.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_info_003.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_pedigreedb_002.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_sample_000.vcf",
+        "hts-specs/test/vcf/4.1/failed/failed_meta_sample_001.vcf"
+      ],
+      "falseReject": [
+        "hts-specs/test/vcf/4.1/passed/complexfile_passed_000.vcf",
+        "hts-specs/test/vcf/4.1/passed/passed_body_alt.vcf",
+        "hts-specs/test/vcf/4.1/passed/passed_body_info.vcf",
+        "hts-specs/test/vcf/4.1/passed/passed_meta_contig.vcf",
+        "hts-specs/test/vcf/4.1/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "hts-specs VCF 4.2",
+      "format": "vcf",
+      "files": 215,
+      "agree": 197,
+      "falseAccept": [
+        "hts-specs/test/vcf/4.2/failed/failed_body_chrom_001.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_body_duplicated_000.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_body_duplicated_001.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_body_duplicated_003.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_alt_001.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_alt_002.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_alt_004.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_assembly_001.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_format_003.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_info_003.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_pedigreedb_002.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_sample_000.vcf",
+        "hts-specs/test/vcf/4.2/failed/failed_meta_sample_001.vcf"
+      ],
+      "falseReject": [
+        "hts-specs/test/vcf/4.2/passed/complexfile_passed_000.vcf",
+        "hts-specs/test/vcf/4.2/passed/passed_body_alt.vcf",
+        "hts-specs/test/vcf/4.2/passed/passed_body_info.vcf",
+        "hts-specs/test/vcf/4.2/passed/passed_meta_contig.vcf",
+        "hts-specs/test/vcf/4.2/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "hts-specs VCF 4.3",
+      "format": "vcf",
+      "files": 249,
+      "agree": 224,
+      "falseAccept": [
+        "hts-specs/test/vcf/4.3/failed/failed_body_chrom_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_body_chrom_004.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_body_duplicated_000.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_body_duplicated_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_body_duplicated_003.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_alt_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_alt_002.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_alt_004.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_assembly_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_contig_003.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_format_003.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_info_003.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_meta_000.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_meta_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_meta_002.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_meta_003.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_pedigree_000.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_pedigree_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_pedigreedb_002.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_sample_001.vcf",
+        "hts-specs/test/vcf/4.3/failed/failed_meta_sample_003.vcf"
+      ],
+      "falseReject": [
+        "hts-specs/test/vcf/4.3/passed/complexfile_passed_000.vcf",
+        "hts-specs/test/vcf/4.3/passed/passed_body_alt.vcf",
+        "hts-specs/test/vcf/4.3/passed/passed_body_info.vcf",
+        "hts-specs/test/vcf/4.3/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "vcf-validator VCF 4.1",
+      "format": "vcf",
+      "files": 219,
+      "agree": 202,
+      "falseAccept": [
+        "vcf-validator/test/input_files/v4.1/failed/failed_body_duplicated_000.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_body_duplicated_001.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_body_duplicated_003.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_alt_001.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_alt_002.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_alt_004.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_assembly_001.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_format_003.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_info_003.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_pedigreedb_002.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_sample_000.vcf",
+        "vcf-validator/test/input_files/v4.1/failed/failed_meta_sample_001.vcf"
+      ],
+      "falseReject": [
+        "vcf-validator/test/input_files/v4.1/passed/complexfile_passed_000.vcf",
+        "vcf-validator/test/input_files/v4.1/passed/passed_body_alt.vcf",
+        "vcf-validator/test/input_files/v4.1/passed/passed_body_info.vcf",
+        "vcf-validator/test/input_files/v4.1/passed/passed_meta_contig.vcf",
+        "vcf-validator/test/input_files/v4.1/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "vcf-validator VCF 4.2",
+      "format": "vcf",
+      "files": 217,
+      "agree": 200,
+      "falseAccept": [
+        "vcf-validator/test/input_files/v4.2/failed/failed_body_duplicated_000.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_body_duplicated_001.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_body_duplicated_003.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_alt_001.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_alt_002.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_alt_004.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_assembly_001.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_format_003.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_info_003.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_pedigreedb_002.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_sample_000.vcf",
+        "vcf-validator/test/input_files/v4.2/failed/failed_meta_sample_001.vcf"
+      ],
+      "falseReject": [
+        "vcf-validator/test/input_files/v4.2/passed/complexfile_passed_000.vcf",
+        "vcf-validator/test/input_files/v4.2/passed/passed_body_alt.vcf",
+        "vcf-validator/test/input_files/v4.2/passed/passed_body_info.vcf",
+        "vcf-validator/test/input_files/v4.2/passed/passed_meta_contig.vcf",
+        "vcf-validator/test/input_files/v4.2/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "vcf-validator VCF 4.3",
+      "format": "vcf",
+      "files": 250,
+      "agree": 223,
+      "falseAccept": [
+        "vcf-validator/test/input_files/v4.3/failed/failed_body_chrom_003.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_body_duplicated_000.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_body_duplicated_001.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_body_duplicated_003.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_alt_001.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_alt_002.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_alt_004.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_assembly_001.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_contig_003.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_format_003.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_info_003.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_000.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_001.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_002.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_003.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_pedigree_000.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_pedigree_001.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_pedigreedb_002.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_sample_001.vcf",
+        "vcf-validator/test/input_files/v4.3/failed/failed_meta_sample_003.vcf"
+      ],
+      "falseReject": [
+        "vcf-validator/test/input_files/v4.3/compressed_files/readable/passed/passed_compressed.vcf.gz",
+        "vcf-validator/test/input_files/v4.3/passed/complexfile_passed_000.vcf",
+        "vcf-validator/test/input_files/v4.3/passed/passed_body_alt.vcf",
+        "vcf-validator/test/input_files/v4.3/passed/passed_body_format.vcf",
+        "vcf-validator/test/input_files/v4.3/passed/passed_body_info.vcf",
+        "vcf-validator/test/input_files/v4.3/passed/passed_meta_contig.vcf",
+        "vcf-validator/test/input_files/v4.3/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "vcf-validator VCF 4.4",
+      "format": "vcf",
+      "files": 288,
+      "agree": 240,
+      "falseAccept": [
+        "vcf-validator/test/input_files/v4.4/failed/failed_CNV_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_CNV_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_STR_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_STR_002.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_chrom_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_duplicated_000.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_duplicated_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_duplicated_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_1.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_2.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_3.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_4.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_1.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_2.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_3.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_4.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_5.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_format_1.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_format_2.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_info_CICN.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_info_count.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_sample_PSL.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_sample_PSO.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_sample_PSQ.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_alt_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_alt_002.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_alt_004.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_assembly_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_contig_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_format_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_info_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_000.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_002.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_003.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_pedigree_000.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_pedigree_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_pedigreedb_002.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_sample_001.vcf",
+        "vcf-validator/test/input_files/v4.4/failed/failed_meta_sample_003.vcf"
+      ],
+      "falseReject": [
+        "vcf-validator/test/input_files/v4.4/compressed_files/readable/passed/passed_compressed.vcf.gz",
+        "vcf-validator/test/input_files/v4.4/passed/complexfile_passed_000.vcf",
+        "vcf-validator/test/input_files/v4.4/passed/passed_body_alt.vcf",
+        "vcf-validator/test/input_files/v4.4/passed/passed_body_format.vcf",
+        "vcf-validator/test/input_files/v4.4/passed/passed_body_info.vcf",
+        "vcf-validator/test/input_files/v4.4/passed/passed_body_sample_format_CICN.vcf",
+        "vcf-validator/test/input_files/v4.4/passed/passed_meta_contig.vcf",
+        "vcf-validator/test/input_files/v4.4/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "vcf-validator VCF 4.5",
+      "format": "vcf",
+      "files": 311,
+      "agree": 247,
+      "falseAccept": [
+        "vcf-validator/test/input_files/v4.5/failed/failed_CNV_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_CNV_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_STR_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_STR_002.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_chrom_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_duplicated_000.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_duplicated_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_duplicated_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_3.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_4.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_3.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_4.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_5.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_LAA_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_LAA_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_base_modification.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_CICN.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_END_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_END_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_count.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_DPM5mC.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAA_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAA_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAA_3.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAD.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LEN.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LPL.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_M5mC_1.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_M5mC_2.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_PSL.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_PSO.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_PSQ.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_alt_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_alt_002.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_alt_004.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_assembly_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_contig_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_format_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_format_number_M.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_format_number_M_type.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_info_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_000.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_002.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_003.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_pedigree_000.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_pedigree_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_pedigreedb_002.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_sample_001.vcf",
+        "vcf-validator/test/input_files/v4.5/failed/failed_meta_sample_003.vcf"
+      ],
+      "falseReject": [
+        "vcf-validator/test/input_files/v4.5/compressed_files/readable/passed/passed_compressed.vcf.gz",
+        "vcf-validator/test/input_files/v4.5/passed/complexfile_passed_000.vcf",
+        "vcf-validator/test/input_files/v4.5/passed/passed_body_alt.vcf",
+        "vcf-validator/test/input_files/v4.5/passed/passed_body_format.vcf",
+        "vcf-validator/test/input_files/v4.5/passed/passed_body_info.vcf",
+        "vcf-validator/test/input_files/v4.5/passed/passed_body_sample_format_CICN.vcf",
+        "vcf-validator/test/input_files/v4.5/passed/passed_meta_contig.vcf",
+        "vcf-validator/test/input_files/v4.5/passed/passed_meta_info.vcf"
+      ]
+    },
+    {
+      "suite": "hts-specs SAM",
+      "format": "sam",
+      "files": 190,
+      "agree": 186,
+      "falseAccept": [
+        "hts-specs/test/sam/failed/hdr.HD3.sam"
+      ],
+      "falseReject": [
+        "hts-specs/test/sam/passed/aux.pass-B.sam",
+        "hts-specs/test/sam/passed/aux.pass-H.sam",
+        "hts-specs/test/sam/passed/hdr.PG4.sam"
+      ]
+    },
+    {
+      "suite": "BioFmtSpecimens SAM",
+      "format": "sam",
+      "files": 14,
+      "agree": 13,
+      "falseAccept": [],
+      "falseReject": [
+        "BioFmtSpecimens/SAM/xx#blank.sam"
+      ]
+    },
+    {
+      "suite": "Biopython FASTQ (Cock et al. test cases)",
+      "format": "fastq",
+      "files": 50,
+      "agree": 50,
+      "falseAccept": [],
+      "falseReject": []
+    },
+    {
+      "suite": "BioFmtSpecimens FASTQ",
+      "format": "fastq",
+      "files": 48,
+      "agree": 48,
+      "falseAccept": [],
+      "falseReject": []
+    },
+    {
+      "suite": "BioFmtSpecimens FASTA",
+      "format": "fasta",
+      "files": 46,
+      "agree": 42,
+      "falseAccept": [],
+      "falseReject": [
+        "BioFmtSpecimens/FASTA/badfasta.fasta",
+        "BioFmtSpecimens/FASTA/example1.txt",
+        "BioFmtSpecimens/FASTA/f003.fasta",
+        "BioFmtSpecimens/FASTA/pictogram.fasta"
+      ]
+    },
+    {
+      "suite": "fasta_validator FASTA",
+      "format": "fasta",
+      "files": 11,
+      "agree": 11,
+      "falseAccept": [],
+      "falseReject": []
+    },
+    {
+      "suite": "BioFmtSpecimens GFF3",
+      "format": "gff3",
+      "files": 18,
+      "agree": 12,
+      "falseAccept": [],
+      "falseReject": [
+        "BioFmtSpecimens/GFF3/ERCC92.gff3",
+        "BioFmtSpecimens/GFF3/knownGene.gff3",
+        "BioFmtSpecimens/GFF3/knownGene2.gff3",
+        "BioFmtSpecimens/GFF3/knownGene_out_of_order.gff3",
+        "BioFmtSpecimens/GFF3/mm9_sample_ensembl.gff3",
+        "BioFmtSpecimens/GFF3/only_fasta.gff3"
+      ]
+    },
+    {
+      "suite": "GenomeTools gt gff3",
+      "format": "gff3",
+      "files": 110,
+      "agree": 90,
+      "falseAccept": [
+        "genometools/testdata/gt_gff3_test_27.gff3",
+        "genometools/testdata/md5_seqid_missing_seqid.gff3",
+        "genometools/testdata/md5_seqid_too_short.gff3",
+        "genometools/testdata/md5_seqid_wrong_separator.gff3"
+      ],
+      "falseReject": [
+        "genometools/testdata/cds_check_succ_1.gff3",
+        "genometools/testdata/cds_check_succ_10.gff3",
+        "genometools/testdata/cds_check_succ_11.gff3",
+        "genometools/testdata/cds_check_succ_12.gff3",
+        "genometools/testdata/cds_check_succ_2.gff3",
+        "genometools/testdata/cds_check_succ_3.gff3",
+        "genometools/testdata/cds_check_succ_4.gff3",
+        "genometools/testdata/cds_check_succ_5.gff3",
+        "genometools/testdata/cds_check_succ_6.gff3",
+        "genometools/testdata/cds_check_succ_7.gff3",
+        "genometools/testdata/cds_check_succ_8.gff3",
+        "genometools/testdata/cds_check_succ_9.gff3",
+        "genometools/testdata/gt_gff3_whitespace_problem.gff3",
+        "genometools/testdata/sequence_region_negative_end.gff3",
+        "genometools/testdata/sequence_region_negative_start.gff3",
+        "genometools/testdata/uppercase_attributes.gff3"
+      ]
+    },
+    {
+      "suite": "GenomeTools gt gtf_to_gff3",
+      "format": "gtf",
+      "files": 6,
+      "agree": 5,
+      "falseAccept": [
+        "genometools/testdata/gt_gtf_to_gff3_test_fail_no_flank.gtf"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED03",
+      "format": "bed",
+      "files": 33,
+      "agree": 32,
+      "falseAccept": [
+        "acidbio/bed/BED03/bad/03-chromEnd_too_large.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED04",
+      "format": "bed",
+      "files": 40,
+      "agree": 38,
+      "falseAccept": [
+        "acidbio/bed/BED04/bad/03-chromEnd_too_large.bed",
+        "acidbio/bed/BED04/bad/04-name_with_spaces.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED05",
+      "format": "bed",
+      "files": 48,
+      "agree": 46,
+      "falseAccept": [
+        "acidbio/bed/BED05/bad/03-chromEnd_too_large.bed",
+        "acidbio/bed/BED05/bad/04-name_with_spaces.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED06",
+      "format": "bed",
+      "files": 52,
+      "agree": 50,
+      "falseAccept": [
+        "acidbio/bed/BED06/bad/03-chromEnd_too_large.bed",
+        "acidbio/bed/BED06/bad/04-name_with_spaces.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED07",
+      "format": "bed",
+      "files": 57,
+      "agree": 55,
+      "falseAccept": [
+        "acidbio/bed/BED07/bad/04-name_with_spaces.bed",
+        "acidbio/bed/BED07/bad/07-string_thickStart.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED08",
+      "format": "bed",
+      "files": 64,
+      "agree": 60,
+      "falseAccept": [
+        "acidbio/bed/BED08/bad/04-name_with_spaces.bed",
+        "acidbio/bed/BED08/bad/07-string_thickStart.bed",
+        "acidbio/bed/BED08/bad/08-float_thickEnd.bed",
+        "acidbio/bed/BED08/bad/08-string_thickEnd.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED09",
+      "format": "bed",
+      "files": 71,
+      "agree": 65,
+      "falseAccept": [
+        "acidbio/bed/BED09/bad/04-name_with_spaces.bed",
+        "acidbio/bed/BED09/bad/07-string_thickStart.bed",
+        "acidbio/bed/BED09/bad/08-string_thickEnd.bed",
+        "acidbio/bed/BED09/bad/09-incomplete_rgb.bed",
+        "acidbio/bed/BED09/bad/09-invalid_rgb.bed",
+        "acidbio/bed/BED09/bad/09-string_rgb.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED10",
+      "format": "bed",
+      "files": 79,
+      "agree": 75,
+      "falseAccept": [
+        "acidbio/bed/BED10/bad/07-string_thickStart.bed",
+        "acidbio/bed/BED10/bad/09-incomplete_rgb.bed",
+        "acidbio/bed/BED10/bad/09-invalid_rgb.bed",
+        "acidbio/bed/BED10/bad/10-blockcount_negative.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED11",
+      "format": "bed",
+      "files": 87,
+      "agree": 80,
+      "falseAccept": [
+        "acidbio/bed/BED11/bad/07-string_thickStart.bed",
+        "acidbio/bed/BED11/bad/08-float_thickEnd.bed",
+        "acidbio/bed/BED11/bad/08-string_thickEnd.bed",
+        "acidbio/bed/BED11/bad/09-incomplete_rgb.bed",
+        "acidbio/bed/BED11/bad/09-invalid_rgb.bed",
+        "acidbio/bed/BED11/bad/10-blockcount_negative.bed",
+        "acidbio/bed/BED11/bad/11-mismatch_count_short.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "acidbio BED12",
+      "format": "bed",
+      "files": 92,
+      "agree": 90,
+      "falseAccept": [
+        "acidbio/bed/BED12/bad/04-name_with_spaces.bed",
+        "acidbio/bed/BED12/bad/12-bed13.bed"
+      ],
+      "falseReject": []
+    },
+    {
+      "suite": "BioFmtSpecimens BED",
+      "format": "bed",
+      "files": 13,
+      "agree": 11,
+      "falseAccept": [
+        "BioFmtSpecimens/BED/overlapSelect-wideIn.bed"
+      ],
+      "falseReject": [
+        "BioFmtSpecimens/BED/vgLoadMahoney-clonePcr.bed"
+      ]
+    }
+  ],
+  "disagreements": [
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_body_chrom_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains a colon",
+      "verdict": "beyond-spec",
+      "why": "VCF 4.1 and 4.2 place no restriction on colons in contig names.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_sample_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Genomes field missing",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-description field containing quotes",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Records of one contig are split by another contig. 4.1/4.2 say such blocks \"should\" be contiguous; biolint treats it as an error in strict mode because indexing fails either way.",
+      "first": "VCF207 chrom-not-contiguous @50:1 records for `1` resume here after records of other contigs"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF305 info-count @59:57 `EXPLAIN` has 2 values but its declaration requires Number=1"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Two ##contig lines share an ID. Uniqueness is stated only from 4.3, but parsers of every version keep a single definition, so biolint reports it throughout.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.1/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_body_chrom_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains a colon",
+      "verdict": "beyond-spec",
+      "why": "VCF 4.1 and 4.2 place no restriction on colons in contig names.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Meta-data entry is not a key-value pair",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_sample_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Genomes field missing",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-description field containing quotes",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Records of one contig are split by another contig. 4.1/4.2 say such blocks \"should\" be contiguous; biolint treats it as an error in strict mode because indexing fails either way.",
+      "first": "VCF207 chrom-not-contiguous @50:1 records for `1` resume here after records of other contigs"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF305 info-count @60:57 `EXPLAIN` has 2 values but its declaration requires Number=1"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Two ##contig lines share an ID. Uniqueness is stated only from 4.3, but parsers of every version keep a single definition, so biolint reports it throughout.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.2/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_body_chrom_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains a colon",
+      "verdict": "corpus-outdated",
+      "why": "Colons in contig names were made legal by the 2019 revision of VCF 4.3; the sibling corpus has a passing file with one.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_body_chrom_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Meta-data entry is not a key-value pair",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_contig_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_meta_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Number value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_meta_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Type value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_meta_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "META Values must be surrounded by square brackets",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_meta_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of META fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_pedigree_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_pedigree_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with non-accepted punctuation character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains a whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/failed/failed_meta_sample_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains illegal character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Records of one contig are split by another contig, which VCF 4.3 forbids (\"must form a contiguous block\").",
+      "first": "VCF207 chrom-not-contiguous @50:1 records for `1` resume here after records of other contigs"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF305 info-count @49:36 `SB` has 1 value but its declaration requires Number=4"
+    },
+    {
+      "id": "hts-specs/test/vcf/4.3/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_sample_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Genomes field missing",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-description field containing quotes",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Records of one contig are split by another contig. 4.1/4.2 say such blocks \"should\" be contiguous; biolint treats it as an error in strict mode because indexing fails either way.",
+      "first": "VCF207 chrom-not-contiguous @50:1 records for `1` resume here after records of other contigs"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF309 info-end-before-pos @33:32 END=0 is before POS 100"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Two ##contig lines share an ID. Uniqueness is stated only from 4.3, but parsers of every version keep a single definition, so biolint reports it throughout.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.1/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Meta-data entry is not a key-value pair",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_sample_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Genomes field missing",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-description field containing quotes",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Records of one contig are split by another contig. 4.1/4.2 say such blocks \"should\" be contiguous; biolint treats it as an error in strict mode because indexing fails either way.",
+      "first": "VCF207 chrom-not-contiguous @50:1 records for `1` resume here after records of other contigs"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF309 info-end-before-pos @34:32 END=0 is before POS 100"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Two ##contig lines share an ID. Uniqueness is stated only from 4.3, but parsers of every version keep a single definition, so biolint reports it throughout.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.2/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/compressed_files/readable/passed/passed_compressed.vcf.gz",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_body_chrom_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Meta-data entry is not a key-value pair",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_contig_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Number value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Type value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "META Values must be surrounded by square brackets",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_meta_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of META fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_pedigree_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_pedigree_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with non-accepted punctuation character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains a whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/failed/failed_meta_sample_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains illegal character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A meta line has a value starting with `<` that is not a list of key=value entries; from 4.3 such a line is structured and needs an ID.",
+      "first": "VCF005 meta-structure @44:26 entry `\"FINRISK: Whole-exome sequencing of Dietary` has no `=value`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/passed/passed_body_format.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The FORMAT key `G%3AS` does not match the key syntax `[A-Za-z_][0-9A-Za-z_.]*` required from 4.3.",
+      "first": "VCF401 format-malformed @7:40 FORMAT key `G%3AS` must match `[A-Za-z_][0-9A-Za-z_.]*`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF309 info-end-before-pos @35:32 END=0 is before POS 100"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Two ##contig lines share an ID, which VCF 4.3 and later forbid explicitly.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.3/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/compressed_files/readable/passed/passed_compressed.vcf.gz",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_CNV_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SVCLAIM Is not D, J or DJ",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_CNV_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SVCLAIM is missing for a DEL symbolic allele",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_STR_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "cardinality is inconsistent between RN and RUS",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_STR_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "cardinality is inconsistent between RB and CIRB",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_chrom_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN-RUS-RUL",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN - RUC, RB, CIRUC, CIRB",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_3.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN - RUC, RB; warning: RB ~= RUC * RUL; error to make this fail: RUC not integer with RUB",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_CNVTR_4.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN - RUB, RUC",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - SVLEN not present",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_3.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - SVCLAIM not present for DEL/DUP",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_4.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - CNV:TR must have RUS/RUL",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_SV_5.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - CNV:TR - RB ~= RUL * RUC",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_format_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid format fields, with CICN, format CN must be present",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_format_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid format fields, SVLEN must be same for DEL/DUP/CNV when format CN is present",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_info_CICN.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info CICN value",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_info_count.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field count",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_sample_PSL.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid sample value, unphased allele must have PSL as '.'",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_sample_PSO.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid sample value, PSO to be '.' with PSL '.'",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_body_invalid_sample_PSQ.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid sample value, PSQ to be '.' with PSL '.'",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Meta-data entry is not a key-value pair",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_contig_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Number value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Type value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "META Values must be surrounded by square brackets",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_meta_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of META fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_pedigree_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_pedigree_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with non-accepted punctuation character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains a whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/failed/failed_meta_sample_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains illegal character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A meta line has a value starting with `<` that is not a list of key=value entries; from 4.3 such a line is structured and needs an ID.",
+      "first": "VCF005 meta-structure @44:26 entry `\"FINRISK: Whole-exome sequencing of Dietary` has no `=value`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF407 sample-type @12:103 `GL` is declared as Float but has the value `-0r.58`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/passed_body_format.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The FORMAT key `G%3AS` does not match the key syntax `[A-Za-z_][0-9A-Za-z_.]*` required from 4.3.",
+      "first": "VCF401 format-malformed @7:40 FORMAT key `G%3AS` must match `[A-Za-z_][0-9A-Za-z_.]*`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF309 info-end-before-pos @35:32 END=0 is before POS 100"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/passed_body_sample_format_CICN.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A genotype is written `0/0|`, with a trailing phasing separator, which the GT grammar does not allow.",
+      "first": "VCF405 gt-invalid @15:65 genotype `0/0|` is not valid"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Two ##contig lines share an ID, which VCF 4.3 and later forbid explicitly.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.4/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/compressed_files/readable/passed/passed_compressed.vcf.gz",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF406 sample-count @22:75 `GL` has 3 values but its declaration requires one per genotype (ploidy 2, 1 allele: 1)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_CNV_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SVCLAIM Is not D, J or DJ",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_CNV_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SVCLAIM is missing for a DEL symbolic allele",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_STR_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "cardinality is inconsistent between RN and RUS",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_STR_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "cardinality is inconsistent between RB and CIRB",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_chrom_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_duplicated_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_duplicated_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "triplicated variant",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_duplicated_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "duplicated variant due to different context",
+      "verdict": "beyond-spec",
+      "why": "The specification permits several records at one position. biolint reports exact duplicates as a warning (VCF501) and does not normalise alleles to find equivalent representations.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN-RUS-RUL",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN - RUC, RB, CIRUC, CIRB",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_3.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN - RUC, RB; warning: RB ~= RUC * RUL; error to make this fail: RUC not integer with RUB",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_CNVTR_4.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field on CNV:TR RN - RUB, RUC",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - SVLEN not present",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_3.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - SVCLAIM not present for DEL/DUP",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_4.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - CNV:TR must have RUS/RUL",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_SV_5.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid SV - CNV:TR - RB ~= RUL * RUC",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid format fields, with CICN, format CN must be present",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid format fields, SVLEN must be same for DEL/DUP/CNV when format CN is present",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_LAA_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_LAA_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_format_base_modification.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_CICN.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info CICN value",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_END_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_END_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_info_count.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid info field count",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_DPM5mC.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAA_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAA_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAA_3.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LAD.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LEN.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_LPL.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_M5mC_1.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_M5mC_2.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_PSL.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid sample value, unphased allele must have PSL as '.'",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_PSO.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid sample value, PSO to be '.' with PSL '.'",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_body_invalid_sample_PSQ.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "invalid sample value, PSQ to be '.' with PSL '.'",
+      "verdict": "not-implemented",
+      "why": "Semantic rules for structural variants introduced in VCF 4.4 (SVCLAIM, tandem-repeat keys, CN/CICN, phase-set lists) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_alt_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Number value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_alt_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect ALT Type value",
+      "verdict": "beyond-spec",
+      "why": "##ALT lines have no Number or Type field in any version; extra fields are free-form.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_alt_004.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of ALT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_assembly_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Meta-data entry is not a key-value pair",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_contig_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "contig ID contains illegal character",
+      "verdict": "corpus-outdated",
+      "why": "The contig name uses `*` away from the first position, which the 2019 revision of the VCF 4.3 naming rules made legal.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_format_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of FORMAT fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_format_number_M.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_format_number_M_type.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "Semantic rules introduced in VCF 4.5 (local alleles, base modifications, computed END, FORMAT LEN) are not checked yet.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_info_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of INFO fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Number value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect META Type value",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "META Values must be surrounded by square brackets",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_meta_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Incorrect order of META fields",
+      "verdict": "beyond-spec",
+      "why": "No version requires a field order inside structured meta lines; VCF 4.4 states that implementations must not rely on it.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_pedigree_000.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_pedigree_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Value with non-accepted punctuation character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_pedigreedb_002.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "Non-valid URL",
+      "verdict": "beyond-spec",
+      "why": "The specification does not define what makes a ##assembly or ##pedigreeDB URL valid. biolint only requires that it is not empty.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_sample_001.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains a whitespace",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/failed/failed_meta_sample_003.vcf",
+      "format": "vcf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "SAMPLE ID contains illegal character",
+      "verdict": "beyond-spec",
+      "why": "##SAMPLE, ##PEDIGREE and ##META are described only by example. biolint checks their syntax and that IDs are unique, not their vocabulary.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/complexfile_passed_000.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A meta line has a value starting with `<` that is not a list of key=value entries; from 4.3 such a line is structured and needs an ID.",
+      "first": "VCF005 meta-structure @44:26 entry `\"FINRISK: Whole-exome sequencing of Dietary` has no `=value`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/passed_body_alt.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A record with no ALT allele carries three GL values. Number=G is one value per genotype, and one allele has one diploid genotype. (In 4.4/4.5 the same file also has the malformed float `-0r.58`.)",
+      "first": "VCF407 sample-type @12:103 `GL` is declared as Float but has the value `-0r.58`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/passed_body_format.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The FORMAT key `G%3AS` does not match the key syntax `[A-Za-z_][0-9A-Za-z_.]*` required from 4.3.",
+      "first": "VCF401 format-malformed @7:40 FORMAT key `G%3AS` must match `[A-Za-z_][0-9A-Za-z_.]*`"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/passed_body_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file contains END=0 on a record at POS 100 (END cannot precede POS) and, from 4.3, an SB value with one number where the reserved definition is Number=4.",
+      "first": "VCF305 info-count @49:36 `SB` has 1 value but its declaration requires Number=4"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/passed_body_sample_format_CICN.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A genotype is written `0/0|`, with a trailing phasing separator, which the GT grammar does not allow.",
+      "first": "VCF405 gt-invalid @15:65 genotype `0/0|` is not valid"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/passed_meta_contig.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Two ##contig lines share an ID, which VCF 4.3 and later forbid explicitly.",
+      "first": "VCF007 meta-id-duplicate @3:14 `##contig` ID `1` is already defined"
+    },
+    {
+      "id": "vcf-validator/test/input_files/v4.5/passed/passed_meta_info.vcf",
+      "format": "vcf",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "An INFO line is declared `Number=A,Type=Flag`. Every version requires Number=0 for a Flag.",
+      "first": "VCF011 meta-flag-number @4:23 a Flag takes no value, so its Number must be 0, not A"
+    },
+    {
+      "id": "hts-specs/test/sam/failed/hdr.HD3.sam",
+      "format": "sam",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file (`@HD VN:1.6 GO:none`) is byte-for-byte identical to passed/hdr.HD6.sam in the same corpus, and `none` is a valid GO value.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "hts-specs/test/sam/passed/aux.pass-B.sam",
+      "format": "sam",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The corpus tests the syntax of optional fields only (its README defers SAMtags semantics) and names tags after their type (`BC:B:`, `H1:H:`, `H2:H:`); biolint also holds BC, H1 and H2 to the types SAMtags predefines for them (Z, i, i).",
+      "first": "SAM208 aux-type-mismatch @3:31 `BC` is a predefined tag of type `Z` (a string), not `B`"
+    },
+    {
+      "id": "hts-specs/test/sam/passed/aux.pass-H.sam",
+      "format": "sam",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The corpus tests the syntax of optional fields only (its README defers SAMtags semantics) and names tags after their type (`BC:B:`, `H1:H:`, `H2:H:`); biolint also holds BC, H1 and H2 to the types SAMtags predefines for them (Z, i, i).",
+      "first": "SAM208 aux-type-mismatch @3:31 `H1` is a predefined tag of type `i` (an integer), not `H`"
+    },
+    {
+      "id": "hts-specs/test/sam/passed/hdr.PG4.sam",
+      "format": "sam",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The line `@PG ID:fork-1b PP:fork-1b` names itself as its previous program; the specification says PP must match another @PG line (samtools warns about it too).",
+      "first": "SAM018 pg-previous-unknown @4:19 `PP:fork-1b` points at its own @PG line"
+    },
+    {
+      "id": "BioFmtSpecimens/SAM/xx#blank.sam",
+      "format": "sam",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The file is empty (0 bytes). biolint reports an empty file as an error for every format (TXT010) because it nearly always means a failed step, and `samtools view` refuses it as well.",
+      "first": "TXT010 empty-file @0:0 the file is empty (0 bytes)"
+    },
+    {
+      "id": "BioFmtSpecimens/FASTA/badfasta.fasta",
+      "format": "fasta",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "A blank line splits the sequence of the second record. NCBI states that blank lines are not allowed in the middle of FASTA input and samtools faidx cannot index the file; the index entry itself notes that BioPerl, where the file comes from, considers it invalid.",
+      "first": "FA005 blank-line-in-sequence @17:0 1 blank line inside the sequence of `CEESC13F`"
+    },
+    {
+      "id": "BioFmtSpecimens/FASTA/example1.txt",
+      "format": "fasta",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Sequence lines contain pairs of spaces (the \"cutpoints\" of a BioRuby test) and three records reuse an earlier identifier. Spaces are not residue codes in the NCBI description and shift the coordinates of a faidx index, so biolint reports them as errors; some parsers strip them.",
+      "first": "FA010 sequence-whitespace @22:21 2 whitespace characters inside the sequence line"
+    },
+    {
+      "id": "BioFmtSpecimens/FASTA/f003.fasta",
+      "format": "fasta",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The file has `#` comment lines before, between and after the records, a Biopython test of its own leniency (the file says \"I don't really know if FASTA format is supposed to support this\"). No description of FASTA has `#` comments, and samtools faidx stops at the first one.",
+      "first": "FA009 comment-line @1:1 comment line starting with `#`"
+    },
+    {
+      "id": "BioFmtSpecimens/FASTA/pictogram.fasta",
+      "format": "fasta",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "Ten of the fourteen records reuse an earlier identifier (`seq3`, `seq4`, ...). Parsers read the file, but an index keeps only the first record of that name (samtools faidx: \"Ignoring duplicate sequence\"), so biolint makes duplicate identifiers a warning by default and an error in the strict profile.",
+      "first": "FA008 duplicate-id @7:2 identifier `seq3` was already used on line 5"
+    },
+    {
+      "id": "BioFmtSpecimens/GFF3/ERCC92.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "`##gff-version 3` is on line 3, after two comment lines written by gffread; the specification requires it to be the topmost line. (The default profile accepts the file.)",
+      "first": "GFF003 version-not-first @3:1 `##gff-version` is on line 3, not on the first line"
+    },
+    {
+      "id": "BioFmtSpecimens/GFF3/knownGene.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "One line carries `Ontology_term` twice. The specification writes several values as one comma-separated list and does not say what a repeated tag means; GenomeTools rejects it and biolint follows in strict mode (a warning by default).",
+      "first": "GFF204 attribute-duplicate @10:88 attribute `Ontology_term` appears twice on this line"
+    },
+    {
+      "id": "BioFmtSpecimens/GFF3/knownGene2.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "One line carries `Ontology_term` twice. The specification writes several values as one comma-separated list and does not say what a repeated tag means; GenomeTools rejects it and biolint follows in strict mode (a warning by default).",
+      "first": "GFF204 attribute-duplicate @11:88 attribute `Ontology_term` appears twice on this line"
+    },
+    {
+      "id": "BioFmtSpecimens/GFF3/knownGene_out_of_order.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "A parser stress test: one ID is used on chr9 and chr30, and features on chr17 name a chr9 feature as Parent. The specification does not forbid either in so many words; biolint follows GenomeTools, which rejects both.",
+      "first": "GFF304 parent-different-seqid @3:0 this feature is on `chr17`, but its Parent `AB000114` is on `chr9`"
+    },
+    {
+      "id": "BioFmtSpecimens/GFF3/mm9_sample_ensembl.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Each gene and its transcript share one ID (the transcript line reads `ID=X;Parent=X`), so the IDs are not unique, which the specification requires.",
+      "first": "GFF301 id-duplicate @28:50 ID `CCDS25924.1` is already used by a `gene` feature"
+    },
+    {
+      "id": "BioFmtSpecimens/GFF3/only_fasta.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file holds only FASTA records and has no `##gff-version` line, which the specification says must be present. (The default profile accepts the file with a warning.)",
+      "first": "GFF001 version-missing @1:0 the file does not start with `##gff-version 3`"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_1.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_10.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_11.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_12.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_2.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_3.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_4.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_5.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_6.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_7.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_8.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/cds_check_succ_9.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "Line 7 has an empty source column. The specification requires `.` for an undefined field; GenomeTools happens to accept an empty one.",
+      "first": "GFF103 empty-field @7:5 the source column is empty"
+    },
+    {
+      "id": "genometools/testdata/gt_gff3_test_27.gff3",
+      "format": "gff3",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "A `##sequence-region` line comes after a feature on that sequence. GenomeTools requires the directive first; the specification does not say where it must be.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "genometools/testdata/gt_gff3_whitespace_problem.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The seqid ends with a space. GenomeTools removes it with a warning; the specification says a seqid may not contain unescaped whitespace.",
+      "first": "GFF104 seqid-invalid @3:7 seqid `ctg123 ` contains a space"
+    },
+    {
+      "id": "genometools/testdata/md5_seqid_missing_seqid.gff3",
+      "format": "gff3",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "The seqid breaks the `md5:<checksum>:<name>` convention, which is a GenomeTools extension and not part of GFF3.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "genometools/testdata/md5_seqid_too_short.gff3",
+      "format": "gff3",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "The seqid breaks the `md5:<checksum>:<name>` convention, which is a GenomeTools extension and not part of GFF3.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "genometools/testdata/md5_seqid_wrong_separator.gff3",
+      "format": "gff3",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "The seqid breaks the `md5:<checksum>:<name>` convention, which is a GenomeTools extension and not part of GFF3.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "genometools/testdata/sequence_region_negative_end.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The `##sequence-region` has a negative coordinate. GenomeTools only warns unless run with -strict (the same test suite expects -strict to fail); GFF3 coordinates are positive integers.",
+      "first": "GFF005 sequence-region-invalid @2:30 `##sequence-region` end `-1497228` is not a positive integer"
+    },
+    {
+      "id": "genometools/testdata/sequence_region_negative_start.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The `##sequence-region` has a negative coordinate. GenomeTools only warns unless run with -strict (the same test suite expects -strict to fail); GFF3 coordinates are positive integers.",
+      "first": "GFF005 sequence-region-invalid @2:28 `##sequence-region` start `-1` is not a positive integer"
+    },
+    {
+      "id": "genometools/testdata/uppercase_attributes.gff3",
+      "format": "gff3",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file tests that all reserved tag names are accepted and fills them with the placeholder `xxx`; `Gap=xxx` is not a Gap string as the specification defines it.",
+      "first": "GFF213 gap-invalid @3:90 Gap `xxx` is not a list of operations such as `M210 D12 M238`"
+    },
+    {
+      "id": "genometools/testdata/gt_gtf_to_gff3_test_fail_no_flank.gtf",
+      "format": "gtf",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "A stop_codon line lies five kilobases beyond the last exon of its transcript. The converter needs a CDS next to the stop codon to merge the two; GTF 2.2 has no such rule, and biolint does not check that codons lie inside exons.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED03/bad/03-chromEnd_too_large.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "chromEnd is 4294967296 on chr20, beyond the end of that chromosome (§1.6). Checking it needs chromosome sizes, which biolint does not take; without them the specification allows values up to 2^64−1, so biolint only warns (BED024).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED04/bad/03-chromEnd_too_large.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "chromEnd is 4294967296 on chr20, beyond the end of that chromosome (§1.6). Checking it needs chromosome sizes, which biolint does not take; without them the specification allows values up to 2^64−1, so biolint only warns (BED024).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED04/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED05/bad/03-chromEnd_too_large.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "chromEnd is 4294967296 on chr20, beyond the end of that chromosome (§1.6). Checking it needs chromosome sizes, which biolint does not take; without them the specification allows values up to 2^64−1, so biolint only warns (BED024).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED05/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED06/bad/03-chromEnd_too_large.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "not-implemented",
+      "why": "chromEnd is 4294967296 on chr20, beyond the end of that chromosome (§1.6). Checking it needs chromosome sizes, which biolint does not take; without them the specification allows values up to 2^64−1, so biolint only warns (BED024).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED06/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED07/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED07/bad/07-string_thickStart.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED08/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED08/bad/07-string_thickStart.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED08/bad/08-float_thickEnd.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED08/bad/08-string_thickEnd.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED09/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED09/bad/07-string_thickStart.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED09/bad/08-string_thickEnd.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED09/bad/09-incomplete_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED09/bad/09-invalid_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED09/bad/09-string_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED10/bad/07-string_thickStart.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED10/bad/09-incomplete_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED10/bad/09-invalid_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED10/bad/10-blockcount_negative.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/07-string_thickStart.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/08-float_thickEnd.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/08-string_thickEnd.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/09-incomplete_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/09-invalid_rgb.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/10-blockcount_negative.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED11/bad/11-mismatch_count_short.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "deliberate",
+      "why": "The only defect is on the first data line, the line biolint infers the layout from. Nothing in a BED file says which columns are standard (§4), so the column with the bad value and those after it are read as custom fields, with a note (BED013) quoting the value; the same value on any later line is an error.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED12/bad/04-name_with_spaces.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "corpus-error",
+      "why": "The file is separated by single tabs throughout, and §1.7 allows whitespace in the name in exactly that case; §3.2 only recommends against it. biolint warns (BED030).",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "acidbio/bed/BED12/bad/12-bed13.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "A thirteenth column after twelve valid BED fields is a custom field (BED12+1, §1.3 and §1.10). The corpus rejects it only because the directory expects exactly BED12, which the file itself cannot declare.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "BioFmtSpecimens/BED/overlapSelect-wideIn.bed",
+      "format": "bed",
+      "label": "invalid",
+      "got": "valid",
+      "cause": "",
+      "verdict": "beyond-spec",
+      "why": "The line is a consistent BED12 feature followed by 22 further columns, which the specification allows as custom fields (BED12+22). The index gives no reason for the label, and the twelve standard fields break no rule.",
+      "first": "(no errors reported)"
+    },
+    {
+      "id": "BioFmtSpecimens/BED/vgLoadMahoney-clonePcr.bed",
+      "format": "bed",
+      "label": "valid",
+      "got": "invalid",
+      "cause": "",
+      "verdict": "corpus-outdated",
+      "why": "Chromosome names such as `NM_007524.1` contain a dot. The specimen was labelled against the UCSC description, which has no naming rule; BED v1.0 §1.5 restricts chrom to letters, digits and underscore. biolint accepts the file in its default profile.",
+      "first": "BED020 chrom-name @1:10 chrom `NM_007524.1` contains `.`; the specification allows only letters, digits and `_`"
+    }
+  ]
+}

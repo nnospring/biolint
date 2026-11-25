@@ -1,0 +1,237 @@
+{
+  "commit": "65d3096343daeb3ae88795314c481d15b89284c5",
+  "rows": {
+    "fasta (holdout)": {
+      "files": 58,
+      "clean": 46,
+      "withErrors": 1,
+      "withWarnings": 11,
+      "bytes": 52851039,
+      "ms": 198.07791200000258
+    },
+    "fasta (dev)": {
+      "files": 49,
+      "clean": 41,
+      "withErrors": 0,
+      "withWarnings": 8,
+      "bytes": 168596279,
+      "ms": 427.83858200000043
+    },
+    "vcf (holdout)": {
+      "files": 49,
+      "clean": 36,
+      "withErrors": 2,
+      "withWarnings": 11,
+      "bytes": 121334730,
+      "ms": 1117.5580410000016
+    },
+    "bed (holdout)": {
+      "files": 29,
+      "clean": 25,
+      "withErrors": 1,
+      "withWarnings": 3,
+      "bytes": 16208111,
+      "ms": 77.67162600000088
+    },
+    "bed (dev)": {
+      "files": 24,
+      "clean": 18,
+      "withErrors": 3,
+      "withWarnings": 3,
+      "bytes": 8338598,
+      "ms": 45.620663000000405
+    },
+    "gff3 (dev)": {
+      "files": 5,
+      "clean": 3,
+      "withErrors": 0,
+      "withWarnings": 2,
+      "bytes": 2742948,
+      "ms": 21.57654099999968
+    },
+    "fastq (holdout)": {
+      "files": 58,
+      "clean": 57,
+      "withErrors": 1,
+      "withWarnings": 0,
+      "bytes": 135399313,
+      "ms": 590.040701999998
+    },
+    "fastq (dev)": {
+      "files": 71,
+      "clean": 66,
+      "withErrors": 4,
+      "withWarnings": 1,
+      "bytes": 173347459,
+      "ms": 721.8098770000003
+    },
+    "vcf (dev)": {
+      "files": 35,
+      "clean": 28,
+      "withErrors": 0,
+      "withWarnings": 7,
+      "bytes": 57551696,
+      "ms": 570.989081
+    },
+    "gtf (dev)": {
+      "files": 10,
+      "clean": 9,
+      "withErrors": 0,
+      "withWarnings": 1,
+      "bytes": 108230871,
+      "ms": 413.5526259999996
+    },
+    "gff3 (holdout)": {
+      "files": 8,
+      "clean": 3,
+      "withErrors": 1,
+      "withWarnings": 4,
+      "bytes": 4987382,
+      "ms": 39.85337600000048
+    },
+    "gtf (holdout)": {
+      "files": 4,
+      "clean": 3,
+      "withErrors": 0,
+      "withWarnings": 1,
+      "bytes": 1649890,
+      "ms": 9.009832999999844
+    },
+    "sam (holdout)": {
+      "files": 2,
+      "clean": 0,
+      "withErrors": 1,
+      "withWarnings": 1,
+      "bytes": 95019,
+      "ms": 3.2247080000001915
+    }
+  },
+  "failures": [
+    {
+      "path": "data/delete_me/ampcombi/general_amps.fasta",
+      "set": "holdout",
+      "format": "fasta",
+      "checkedAs": "fasta",
+      "errors": 7,
+      "first": "FA011 @9108:1 digit `0` in the sequence",
+      "codes": "FA011×7"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/genome/genome.gff3",
+      "set": "holdout",
+      "format": "gff3",
+      "checkedAs": "gff3",
+      "errors": 26,
+      "first": "GFF109 @26:47 strand `48e` is not one of `+`, `-`, `.`, `?`",
+      "codes": "GFF109×13 GFF110×13"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/gsmr/bfile/bfile.bed",
+      "set": "dev",
+      "format": "bed",
+      "checkedAs": "unknown",
+      "errors": 1,
+      "first": "TXT011 @0:0 this is a PLINK binary genotype (.bed) file, not text",
+      "codes": "TXT011×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/illumina/fastq/test2_1_corrupted_10kb.fastq.gz",
+      "set": "dev",
+      "format": "fastq",
+      "checkedAs": "fastq",
+      "errors": 2,
+      "first": "FQ007 @681:0 the file ends inside read `normal#21#819265#100/1`: the quality line is missing",
+      "codes": "GZ001×1 FQ007×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/illumina/fastq/test_quality_mismatch.fastq",
+      "set": "dev",
+      "format": "fastq",
+      "checkedAs": "fastq",
+      "errors": 1,
+      "first": "FQ004 @8:0 quality has 47 characters but the sequence of read `ERR:32:000000000-BFFCT:1:1101:17316:1005` has 52 bases",
+      "codes": "FQ004×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/illumina/fastq/test_truncated_clean.fastq",
+      "set": "dev",
+      "format": "fastq",
+      "checkedAs": "fastq",
+      "errors": 1,
+      "first": "FQ007 @9:0 the file ends inside read `ERR001268.3`: the `+` and quality lines are missing",
+      "codes": "FQ007×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/illumina/fastq/test_truncated_halfway.fastq",
+      "set": "holdout",
+      "format": "fastq",
+      "checkedAs": "fastq",
+      "errors": 1,
+      "first": "FQ007 @5:0 the file ends inside read `ERR001268.2`: the `+` and quality lines are missing",
+      "codes": "FQ007×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/illumina/plink/test.rnaseq.bed",
+      "set": "dev",
+      "format": "bed",
+      "checkedAs": "unknown",
+      "errors": 1,
+      "first": "TXT011 @0:0 this is a PLINK binary genotype (.bed) file, not text",
+      "codes": "TXT011×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/illumina/vcf/hg002_chr20_90000_to_100000.dnascope.gvcf.gz",
+      "set": "holdout",
+      "format": "vcf",
+      "checkedAs": "vcf",
+      "errors": 26,
+      "first": "VCF105 @286:1 a second column header line",
+      "codes": "VCF105×26"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/popgen/plink_simulated.bed",
+      "set": "dev",
+      "format": "bed",
+      "checkedAs": "unknown",
+      "errors": 1,
+      "first": "TXT011 @0:0 this is a PLINK binary genotype (.bed) file, not text",
+      "codes": "TXT011×1"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/popgen/plink_simulated.vcf.gz",
+      "set": "holdout",
+      "format": "vcf",
+      "checkedAs": "vcf",
+      "errors": 220,
+      "first": "VCF212 @8:14 ALT allele `d` is not valid",
+      "codes": "VCF212×220"
+    },
+    {
+      "path": "data/genomics/homo_sapiens/riboseq_expression/rpbp/reference.annotated.bed.gz",
+      "set": "holdout",
+      "format": "bed",
+      "checkedAs": "bed",
+      "errors": 6952,
+      "first": "BED036 @2:36 thickStart `-1` is negative",
+      "codes": "BED036×6952"
+    },
+    {
+      "path": "data/genomics/sarscov2/illumina/bam/test.paired_end.sorted.invalid.sam",
+      "set": "holdout",
+      "format": "sam",
+      "checkedAs": "sam",
+      "errors": 1,
+      "first": "SAM109 @7:22 records name a reference sequence, but the header has no `@SQ` lines",
+      "codes": "SAM109×1"
+    },
+    {
+      "path": "data/genomics/sarscov2/illumina/fastq/test_1_broken.fastq.gz",
+      "set": "dev",
+      "format": "fastq",
+      "checkedAs": "fastq",
+      "errors": 4,
+      "first": "FQ004 @8:0 quality has 68 characters but the sequence of read `ERR5069949.576388` has 77 bases",
+      "codes": "FQ004×3 FQ002×1"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - name: Generated rule docs are up to date
+        run: node scripts/gen-docs.ts --check
+      - name: README numbers match the committed reports
+        run: node scripts/readme.ts --check
+      - run: npm pack
+      - uses: actions/upload-artifact@v4
+        if: matrix.os == 'ubuntu-latest'
+        with:
+          name: tarball
+          path: biolint-*.tgz
+
+  runtime:
+    name: Installed package on Node ${{ matrix.node }}
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: tarball
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: sh scripts/smoke.sh biolint-*.tgz
+
+  conformance:
+    name: Conformance against third-party corpora
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Fetch corpora at pinned commits
+        run: node scripts/corpora.ts
+      - name: Score, and fail on any unexplained disagreement
+        run: npm run conformance
+      - name: Committed report matches a fresh run
+        run: git diff --exit-code -- docs/CONFORMANCE.md conformance/results.json

@@ -1,0 +1,16 @@
+[
+  { "path": "delete_me/ampcombi/general_amps.fasta", "kind": "genuine-defect", "why": "A record of this antimicrobial-peptide database dump has the single character `0` in place of a sequence." },
+  { "path": "homo_sapiens/genome/genome.gff3", "kind": "genuine-defect", "why": "On 13 lines a score such as `2.48e-03` is split across the score, strand and phase columns (`2`, `48e`, `03`), shifting everything after it." },
+  { "path": "gsmr/bfile/bfile.bed", "kind": "other-format", "why": "A PLINK binary genotype file, which shares the `.bed` extension with the interval format." },
+  { "path": "illumina/plink/test.rnaseq.bed", "kind": "other-format", "why": "A PLINK binary genotype file." },
+  { "path": "popgen/plink_simulated.bed", "kind": "other-format", "why": "A PLINK binary genotype file." },
+  { "path": "fastq/test2_1_corrupted_10kb.fastq.gz", "kind": "broken-on-purpose", "why": "A test fixture truncated in the middle of the gzip stream." },
+  { "path": "fastq/test_quality_mismatch.fastq", "kind": "broken-on-purpose", "why": "A test fixture whose quality string is shorter than its sequence." },
+  { "path": "fastq/test_truncated_clean.fastq", "kind": "broken-on-purpose", "why": "A test fixture cut off inside a record." },
+  { "path": "fastq/test_truncated_halfway.fastq", "kind": "broken-on-purpose", "why": "A test fixture cut off inside a record." },
+  { "path": "sarscov2/illumina/fastq/test_1_broken.fastq.gz", "kind": "broken-on-purpose", "why": "A test fixture with mismatched sequence and quality lengths." },
+  { "path": "bam/test.paired_end.sorted.invalid.sam", "kind": "broken-on-purpose", "why": "A test fixture: alignments name reference sequences but the header has no @SQ lines, which samtools refuses." },
+  { "path": "popgen/plink_simulated.vcf.gz", "kind": "genuine-defect", "why": "PLINK's simulated data uses `d` and `D` as alleles. htslib reads the file, but these are not bases, and tools that interpret alleles (for example `bcftools norm`) reject them." },
+  { "path": "vcf/hg002_chr20_90000_to_100000.dnascope.gvcf.gz", "kind": "false-positive", "why": "The file has `#FGQB` lines among the records (a vendor extension). biolint 0.1.0-dev mis-reported each as a repeated column header (an error). Fixed: they are now reported once as a comment line among the records (VCF106, a warning)." },
+  { "path": "riboseq_expression/rpbp/reference.annotated.bed.gz", "kind": "false-positive", "why": "The file has `-1` in thickStart/thickEnd for transcripts without a coding region. biolint reported an error on every such line. Fixed: this convention is now a warning (BED039)." }
+]
